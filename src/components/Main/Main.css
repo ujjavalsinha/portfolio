@@ -1,0 +1,138 @@
+/* 
+black : #1A1A1D
+grey : #4E4E50
+maroon : #6F2232
+dark-pinkish red : #950740
+red : #C3073F
+ */
+.Main{
+    width : 100vw;
+    height: 100vh;
+    display : flex;
+    flex-direction : column;
+    justify-content: center;
+    align-items: center;
+    background-color : #1A1A1D;
+    position : relative;
+}
+
+.Main .main-sub{
+    width : 50%;
+    
+}
+
+.Main > *{
+    text-align : left !important;
+}
+.Main .hi-message{
+    color : #C3073F;
+    font-size : clamp(15px, 3vw, 20px);
+    margin : 0;
+}
+.Main .name{
+    font-size : clamp(35px, 8vw, 80px);
+    margin : 0;
+    color : rgb(216, 216, 200);
+}
+
+.Main .message{
+    margin : 0;
+    font-size : clamp(20px, 6vw, 60px);
+    color : #C3073F;
+}
+
+.Main .paragraph{
+    position : relative;
+    padding : 10px 10px 30px 10px;
+    font-size : clamp(0.8rem, 3vw, 1.5rem);
+    margin : 0;
+    width : 61%;
+    color : rgb(216, 216, 200);
+    line-height : 1.4;
+}
+
+.Main .icons-list{
+    position : fixed;
+    height : 40vh;
+    bottom : 0;
+    display : flex;
+    flex-direction: column;
+    left : 30px;
+    justify-content : space-between;
+    align-items : center;
+}
+.Main .line{
+    height : 130px;
+    width : 2px;
+    background: #C3073F;
+    
+}
+.Main .icons-list .icons{
+    height : 35px;
+    width  : 35px;
+    cursor : pointer;
+    transition : 170ms linear;
+}
+
+.Main .icons-list .icons:hover{
+    transform : translateY(-6px)
+}
+
+@keyframes rotateLetter{
+    100%{
+        transform : rotateY(-180deg);
+    }
+}
+
+.Main .letter{
+    position : relative;
+    animation-name : rotateLetter;
+    animation-duration : 1s;
+    animation-fill-mode : forwards;
+}
+
+.Main .letter:hover{
+   
+    position : relative;
+    animation-name : rotateLetter;
+    animation-duration : 1s;
+    animation-fill-mode : forwards;
+    
+}
+
+.get-in-touch{
+    font-size : 18px;
+    height : 70px;
+    color : rgb(216, 216, 200);;
+    width : 170px;
+    background-color : #1A1A1D;
+    border : 2px solid #C3073F;
+    border-radius : 5px;
+    cursor: pointer;
+}
+
+@media (max-width : 1024px){
+    .Main .main-sub{
+        width : 70%;
+        
+    }
+
+    .Main .paragraph{
+        width : 85%;
+        text-align: left !important;
+        
+        padding-left : 0;
+    }
+
+    .Main .get-in-touch{
+        height : 40px;
+        width : 120px;
+        font-size: clamp(14px, 2vw, 18px);
+    }
+
+    .Main .icons-list{
+        display : none;
+    }
+
+   
+}
