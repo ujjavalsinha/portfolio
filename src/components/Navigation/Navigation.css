@@ -1,0 +1,114 @@
+.Navigation{
+    height : 4rem;
+    width : 100vw;
+    position : fixed;
+    z-index : 8;
+    display : flex;
+    justify-content: flex-end;
+    top : 0;
+    transition : all 0.2s ease-in-out; 
+}
+
+.Navigation .backdrop{
+    z-index : -2;
+    position : fixed;
+    top : 0;
+    left : 0;
+    height : 100vh;
+    width : 100vw;
+    background-color : black;
+    opacity : 70%;
+    
+}
+.logo{
+    font-size : 40px;
+    margin : 0;
+    font-weight : bolder;
+    color :  #C3073F;
+    position : absolute;
+    text-decoration : none;
+    border : 1px solid #C3073F;
+    top : 8px;
+    transform : translateY(0%);
+    left : 10%;
+}
+.active-nav{
+    background-color: rgb(216, 216, 200);;
+}
+
+.Navigation ul{
+    display : flex;
+    width : 35%;
+    justify-content: space-around;
+    list-style : none;
+    align-items: center;
+}
+
+.Navigation ul li a{
+    text-decoration: none;
+    color : rgb(216, 216, 200);
+    font-weight : bold;
+}
+
+.active{
+    text-decoration : underline;
+}
+
+.Navigation .three-lines{
+    display : none
+}
+@media (max-width : 1260px){
+    .Navigation ul{
+        width : 50%;
+    }
+}
+
+@media (max-width : 500px){
+    
+    .Navigation ul{
+        display : none;
+    }
+
+    .Navigation .three-lines{
+        padding : 10px;
+        display : block;
+        height : 2.5rem;
+        width : 2.5rem;
+        display : grid;
+        margin-right : 5%;
+        
+    }
+
+    .Navigation .line1{
+        width : 100%;
+        height : 2px;
+        background-color : #C3073F;
+        align-self: center;
+
+    }
+
+    .Navigation .line2{
+        width : 80%;
+        height : 2px;
+        background-color : #C3073F;
+        display : flex;
+        justify-self: flex-end;
+        align-self: center;
+    }
+
+    .Navigation .line3{
+        width : 50%;
+        height : 2px;
+        background-color : #C3073F;
+        justify-self: flex-end;
+        align-self: center;
+    }
+
+    .Navigation .cross-icon{
+        position : relative;
+        z-index : 8;
+        height : 100%;
+        width : 100%;
+        align-self : end;
+    }
+}
