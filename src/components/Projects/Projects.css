@@ -234,14 +234,6 @@
         transition : all 0.2s linear;
         filter : brightness(50%);
     }
-    
-    .Projects .image-container:hover::after{
-        content : '';
-        cursor : pointer;
-        opacity : 85%;
-        filter : brightness(50%);
-    }
-    
     .Projects .featured-project{
         color : rgb(228, 228, 197);
     }
