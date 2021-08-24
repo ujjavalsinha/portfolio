@@ -11,7 +11,7 @@ const Main = props => {
       <div className='icons-list'>
         <a rel="noopener noreferrer" target="_blank"><InstagramIcon className='icons'/></a>
         <a rel="noopener noreferrer" target="_blank" href='https://www.linkedin.com/in/ujjaval-sinha-6794453a/'><LinkedinIcon className='icons'/></a>
-        <a rel="noopener noreferrer" target="_blank"><GithubIcon className='icons'/></a>
+        <a rel="noopener noreferrer" target="_blank" href="https://github.com/ujjavalsinha"><GithubIcon className='icons'/></a>
         <a rel="noopener noreferrer" target="_blank"><InstagramIcon className='icons'/></a>
         <div className='line'></div>
       </div>
