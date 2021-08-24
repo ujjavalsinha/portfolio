@@ -1,0 +1,35 @@
+.Sidebar{
+    height : 100vh;
+    position : fixed;
+    background-color : rgb(216, 216, 200);
+    width : 70%;
+    display : flex;
+    justify-content: center;
+    align-items : center;
+    transition : all 0.3s linear;
+    z-index : 7;
+}
+
+
+.Sidebar .sidebar-icons{
+    
+    height : 50%;
+    display : flex;
+    flex-direction : column;
+    justify-content : space-around;
+}
+
+.Sidebar a{
+    color : rgb(226,87,94);
+    text-decoration: none;
+    font-size : 1.5rem;
+    transition : all 0.1s linear;
+    padding : 8px;
+}
+
+.Sidebar a:hover{
+    border : 1px solid rgb(226,87,94);
+}
+
+
+
