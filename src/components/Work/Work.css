@@ -1,0 +1,156 @@
+.Work{
+    height : 100vh;
+    background-color : #1A1A1D;
+    width : 100vw;
+    display : flex;
+    justify-content: center;
+    align-items : center;
+}
+
+.work-main{
+    width : 40%;
+    position : relative
+    
+}
+
+.Work *{
+    color : rgb(216, 216, 200);;
+    text-align : left !important;
+}
+
+.work-desc{
+    display : flex;
+    position : relative;
+    height : 350px;
+}
+
+.left-line{
+    position : absolute;
+    height : 100%;
+    width : 2px;
+    background-color : #6F2232;
+    left : 0;
+
+}
+.company-list{
+    flex : 1;
+}
+
+@keyframes fading{
+    from{ 
+        opacity : 0%;
+    }
+    to{
+        opacity : 100%;
+    }
+}
+
+.role {
+    flex : 4;
+    padding-left : 20px;
+    position : relative;
+    transition : all 1s linear;
+    animation-name : fading;
+}
+
+.company-list{
+    display : flex;
+    flex-direction : column;
+   
+}
+
+.Work .active-comp{
+    background-color : #C3073F;
+    color : rgb(216, 216, 200);;
+    border-left : 2px solid #6F2232;
+}
+.company-name{
+    height : 50px;
+    background-color : #1A1A1D;
+    border : none;
+    display : flex;
+    justify-content : center;
+    align-items : center;
+    font-size : 16px;
+    border-left : 1px solid #6F2232;
+    transition : all 0.5s linear;
+    -webkit-transition: all 0.5s linear;
+    -ms-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    cursor: pointer;
+}
+
+.Work .where{
+    font-size : 30px ;
+    color : #C3073F;
+    font-weight : 700;
+    position : relative
+}
+.Work .point{
+    font-size : 14px;
+}
+.where-and-line{
+    position : relative;
+}
+.Work .where-line{
+    position : absolute;
+    height : 2px;
+    width : 60%;
+    background-color : #6F2232;
+    top : 50%;
+    left : 300px;
+}
+.company-name:hover{
+    background-color : #C3073F;
+    color : rgb(216, 216, 200);;
+    border-left : 2px solid #6F2232;
+}
+
+.position{
+    margin : 0;
+    margin-top : 13px;
+    font-size : 20px;
+    font-weight : 700;
+}
+
+.comp-name{
+    color :#C3073F;
+}
+
+.time-period{
+    font-size : 13.5px;
+    color : #C3073F;
+}
+
+@media (max-width : 1024px){
+    .Work .work-main{
+        width : 75%;
+    }
+
+    .Work .where-line{
+        display : none;
+    }
+
+    
+}
+
+@media (max-width : 768px){
+    .Work .work-desc{
+        display : grid;
+        grid-template-rows : 80px auto;
+
+    }
+
+    .Work .company-list{
+        display : flex;
+        flex-direction : row;
+    }
+
+    .Work .company-name{
+        width : 100px;
+    }
+
+    .Work .left-line{
+        display : none;
+    }
+}
