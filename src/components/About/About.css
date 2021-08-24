@@ -22,7 +22,7 @@
 }
 
 .about-heading{
-    font-size : 60px;
+    font-size : clamp(40px, 6vw, 60px);
     margin : 0;
     padding : 15px;
 }
@@ -57,6 +57,6 @@
 
 @media (max-width : 768px){
     .About .about-section{
-        width : 70%;
+        width : 74%;
     }
 }
