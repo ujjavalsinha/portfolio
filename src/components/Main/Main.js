@@ -16,6 +16,8 @@ const Main = props => {
         <div className='line'></div>
       </div>
       <div className='main-sub'>
+        <div className='anim-element1'></div>
+        <div className='anim-element2'></div>
         <p className='hi-message'>Hi, my name is</p>
         <h1 className='name'>
           <span className='letter'>U</span>
@@ -32,6 +34,7 @@ const Main = props => {
           <span className='letter'>H</span>
           <span className='letter'>A</span>
           </h1>
+          <div className='anim-element3'></div>
         <p className='message'>I build things for web</p>
         <p className='paragraph'>I'm a software engineer specializing in building exceptional digital experiences. I am currently working as a web developer at Infosys</p>
         <Link to='#about' smooth><button className='get-in-touch'>Get In Touch</button></Link>
