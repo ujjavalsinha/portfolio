@@ -7,7 +7,7 @@ import { ReactComponent as LinkedinIcon } from '../../assets/linkedin.svg'
 const Main = props => {
   return (
     <div id='home' className="Main">
-      
+      <p style={{position : 'absolute', top : '-100%'}}>Ujjaval Sinha</p>
       <div className='icons-list'>
         <a rel="noopener noreferrer" target="_blank"><InstagramIcon className='icons'/></a>
         <a rel="noopener noreferrer" target="_blank" href='https://www.linkedin.com/in/ujjaval-sinha-6794453a/'><LinkedinIcon className='icons'/></a>
